@@ -1,0 +1,12 @@
+name: hello-test
+manifestType: rawManifest
+resourcePath: ['manifest/templates']
+
+service:
+  - name: hello-test
+    serviceType: deployment
+    gitUrl: https://github.com/haozi23333/hello-nocaltest.git
+    devContainerImage: haozi23333/hello-test
+    command: ["node", "dist/main.js"]
+    ports:
+	    - containerPort: 3000
