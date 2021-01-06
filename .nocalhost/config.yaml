@@ -3,7 +3,7 @@ manifestType: rawManifest
 resourcePath: [ 'manifest/templates' ]
 
 service:
-  - name: hello-test
+  - name: hello-test-deployment
     serviceType: deployment
     gitUrl: https://github.com/haozi23333/hello-nocaltest.git
     devContainerImage: haozi23333/hello-test:dev
@@ -12,7 +12,3 @@ service:
       - ./
     devPorts:
       - 9090:3000
-    syncFilePattern:
-      - .
-    ignoreFilePattern:
-      - .git
