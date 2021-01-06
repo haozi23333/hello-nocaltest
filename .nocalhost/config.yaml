@@ -9,10 +9,10 @@ service:
     devContainerImage: haozi23333/hello-test:dev
     workDir: /app
     syncDirs:
-    - ./
+      - ./
     devPorts:
-    - 9090:3000
+      - 9090:3000
     syncFilePattern:
-    - .
+      - .
     ignoreFilePattern:
-    - .git
+      - .git

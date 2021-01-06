@@ -38,5 +38,6 @@ spec:
       - name: hello-test
         image: haozi23333/hello-test:dev
         imagePullPolicy: IfNotPresent
+        command: ["npm", "run", "start:dev"]
         ports:
         - containerPort: 3000
