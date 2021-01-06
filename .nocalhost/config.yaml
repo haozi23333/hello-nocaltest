@@ -6,7 +6,7 @@ service:
   - name: hello-test
     serviceType: deployment
     gitUrl: https://github.com/haozi23333/hello-nocaltest.git
-    devContainerImage: haozi23333/hello-test
+    devContainerImage: haozi23333/hello-test:dev
     workDir: /app
     syncDirs:
     - ./
