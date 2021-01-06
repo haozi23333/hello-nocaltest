@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-test
+  name: hello-test-deployment
   labels:
-    app: hello-test
-    service: hello-test
+    app: hello-test-deployment
+    service: hello-test-deployment
 spec:
   selector:
     app: hello-test-deployment
@@ -35,7 +35,7 @@ spec:
         app: hello-test-deployment
     spec:
       containers:
-      - name: hello-test
+      - name: hello-test-deployment
         image: haozi23333/hello-test:dev
         imagePullPolicy: IfNotPresent
         command: ["npm", "run", "start:dev"]
