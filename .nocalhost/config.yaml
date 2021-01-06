@@ -7,6 +7,8 @@ service:
     serviceType: deployment
     gitUrl: https://github.com/haozi23333/hello-nocaltest.git
     devContainerImage: haozi23333/hello-test
-    command: [ "node", "dist/main.js" ]
-    ports:
-      - containerPort: 3000
+    workDir: /app
+    syncDirs:
+	    - ./
+    devPorts:
+      - 8080:3000
