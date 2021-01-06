@@ -2,6 +2,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-test
+  labels:
+    app: hello-test
+    service: hello-test
 spec:
   selector:
     app: hello-test-deployment
@@ -32,11 +35,8 @@ spec:
         app: hello-test-deployment
     spec:
       containers:
-        - name: hello-test
-          image: haozi23333/hello-test
-          resources:
-            limits:
-              memory: "256Mi"
-              cpu: "500m"
-          ports:
-            - containerPort: 3000
+      - name: hello-test
+        image: haozi23333/hello-test
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
