@@ -12,3 +12,8 @@ service:
       - ./
     devPorts:
       - 9090:3000
+    syncFilePattern:
+      - "."
+    ignoreFilePattern:
+      - ".git"
+    
