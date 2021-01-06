@@ -11,4 +11,8 @@ service:
     syncDirs:
     - ./
     devPorts:
-    - 8080:3000
+    - 9090:3000
+    syncFilePattern:
+    - .
+    ignoreFilePattern:
+    - .git
