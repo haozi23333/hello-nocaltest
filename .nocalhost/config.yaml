@@ -1,4 +1,4 @@
-name: hello-test
+esname: hello-test
 manifestType: rawManifest
 resourcePath: [ 'manifest/templates' ]
 
@@ -9,6 +9,6 @@ service:
     devContainerImage: haozi23333/hello-test
     workDir: /app
     syncDirs:
-	    - ./
+    - ./
     devPorts:
-      - 8080:3000
+    - 8080:3000
