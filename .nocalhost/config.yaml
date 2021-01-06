@@ -1,4 +1,4 @@
-esname: hello-test
+name: hello-test-deployment
 manifestType: rawManifest
 resourcePath: [ 'manifest/templates' ]
 
