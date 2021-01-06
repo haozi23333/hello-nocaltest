@@ -2,7 +2,7 @@ name: hello-test-deployment
 manifestType: rawManifest
 resourcePath: [ 'manifest/templates' ]
 
-service:
+services:
   - name: hello-test-deployment
     serviceType: deployment
     gitUrl: https://github.com/haozi23333/hello-nocaltest.git
